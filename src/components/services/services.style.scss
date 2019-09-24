@@ -1,0 +1,43 @@
+@import "src/_variables.style.scss";
+
+#services{
+background: $alt-back-color;
+padding:4rem 2rem;
+text-align: center;
+color:$body-color;
+    .services-heading{
+        margin-bottom: 2rem;
+        h2{
+            font-size:3.5rem;
+            &::after{
+                content: '';
+                height: 3px;
+                width:5rem;
+                background: $secondary-color;
+                display: block;
+                margin:12px auto;
+            }
+        }
+        p{
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+    }
+
+    .service{
+        .service-header{
+            img{
+                height: 60px;
+            }
+            h4{
+                color:$secondary-color;
+                font-weight:  700;
+                margin: 2rem 0;
+            }
+        }
+        p{
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+}

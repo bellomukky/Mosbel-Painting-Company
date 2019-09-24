@@ -1,0 +1,52 @@
+@import './../../variables.style';
+#mosbelCarousel{
+    .carousel-item{
+        position: relative;
+        .carousel-image{
+            height: 450px;
+            background-position:  center;
+            background-image: linear-gradient(134deg, rgba($black,.6),rgba($black,.5));
+            background-repeat:  no-repeat;
+            background-size: cover;
+
+            .carousel-caption{
+                top:40%;
+                right: unset;
+                left:10%;
+                transform: translateY(-50%);
+                max-width: 60rem;
+                text-align: left;
+                h1{
+                    font-weight: 600;
+                    font-size: 5rem;
+                    font-family: "Roboto";
+                } 
+                h4{
+                    font-weight: 300;
+                    font-size: 2.5rem;
+                    font-family: "Raleway",sans-serif;
+                }
+                .btn-quote{
+                    background-image: linear-gradient(135deg,rgba($primary-color,1),rgba($secondary-color,1));
+                    color:#fff;
+                    text-decoration: none;
+                    border:none;
+                    padding:12px 30px;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    font-family: "Roboto",sans-serif;
+                    margin-top:1rem;
+                    transition: all .3s ease-out;
+                    border-radius: 100px;
+                    text-transform: uppercase;
+                    &:hover{
+                        border:2px solid #fff;
+                        color:#fff;
+                        background-image: none;
+                       // background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

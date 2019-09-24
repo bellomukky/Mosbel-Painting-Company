@@ -1,0 +1,52 @@
+@import "src/_variables.style.scss";
+
+#navbar-container{
+    .navbar{
+        height:6.5rem;
+        background-color: #fff;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        padding:0 4rem;
+        .navbar-brand{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color:$secondary-color;
+        }
+        .navbar-nav {
+            .nav-item{
+               .nav-link{
+                color:$link-color;
+                font-size: 1.4rem;
+                transition: all .1s ease-in-out;
+                padding:7px 15px;
+                font-weight: 700;
+                text-transform: uppercase;
+                vertical-align: middle;
+                &:hover{
+                    color:$secondary-color;
+                }
+               }
+               &.quote{
+                border:2px solid $secondary-color;
+                transition: all .3s ease-in;
+                border-radius: 4px;
+                background-color: $secondary-color;
+                .nav-link{
+                    color:#fff;
+                    font-weight: 600;
+                } 
+                &:hover{
+                    background-color: #fff;
+                    .nav-link{
+                        color: $secondary-color;;
+                    } 
+                }
+                }
+               &.active{
+                .nav-link{
+                    color:$secondary-color;
+                   } 
+               }
+            }
+        }
+    }
+}

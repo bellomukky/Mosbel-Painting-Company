@@ -1,0 +1,55 @@
+@import "src/_variables.style.scss";
+
+
+#topnav{
+    .topnav-container{
+        background:linear-gradient(90deg, $primary-color, $secondary-color);
+       padding: 0 4rem;
+        .left-col,.right-col{
+           
+            ul{
+                list-style: none;
+                li{
+                    display: inline-block;
+                    color:#fff;
+                   
+                    font-size: 1.2rem;
+                    line-height: 4rem;
+                }
+            }
+        }
+
+        .left-col{
+           .phone-label{
+               margin:0 5px;
+               font-size: 1.4rem;
+           }
+           .icon{
+            font-size: 1.4rem;
+            vertical-align: middle;
+            margin-bottom: 6px;
+           }
+        }
+
+        .right-col{
+            ul{
+                float: right;
+                li{
+                    a{
+                        color: #fff;
+                        font-size: 1.4rem;
+                        text-decoration: none;
+
+                        .icon{
+                            font-size: 1.4rem;
+                            margin:0 5px;
+                            margin-bottom: 4px;
+                        }
+                       
+                    }
+
+                }
+            }
+        }
+    }
+}
